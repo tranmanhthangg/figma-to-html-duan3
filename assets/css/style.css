@@ -43,15 +43,31 @@ a {
     opacity: 0.9;
 }
 
-/* ==================== header ====================*/
+.section-heading {
+    color: #10375C;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
 
-/* =============== header-top ===============*/
+.section-desc {
+    margin-top: 18px;
+    color: #575F66;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67;
+}
+
+/* ==================== header ====================*/
 
 .header {
     padding-top: 30px;
-    background: var(--header-bg);
+    background-color: var(--header-bg);
     min-height: 100vh;
 }
+
+/* =============== header-top ===============*/
 
 .header-top {
     display: flex;
@@ -73,7 +89,8 @@ a {
 }
 
 .navbar__link:hover,
-.navbar__link--active {
+.navbar__link--active,
+.header__action--login:hover {
     color: #FFF;
     text-shadow: 1px 0 0 currentColor;
 }
@@ -167,4 +184,86 @@ a {
     margin-left: -6px;
     width: 210px;
     height: 410px;
+}
+
+/* ==================== service ====================*/
+
+.service {
+    padding: 170px 0;
+    background-color: #fff;
+}
+
+.service__heading,
+.service__desc {
+    text-align: center;
+}
+
+.service__desc {
+    max-width: 468px;
+    margin: 0 auto;
+}
+
+.service__row {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service__img {
+    width: 570px;
+    height: 570px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.service-item {
+    padding: 21px;
+    display: flex;
+    max-width: 470px;
+    border-radius: 10px;
+    background: #FFF;
+    transition: 0.25s;
+}
+
+.service-item:hover {
+    position: relative; 
+    /* khi dùng position: relative thì phần tử bị lôi khỏi luồng thông thường và năm trên mặt phẳng cao hơn, khiến cho phần bóng không bị che bởi phần tử sau nó, thử bỏ đi mà xem */
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+
+.service-item__icon {
+    margin-right: 19px;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #EFF6FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.25s;
+}
+
+.service-item:hover .service-item__icon {
+    color: #fff;
+    background-color: #2E80CE;
+}
+
+.service-item__heading {
+    color: #10375C;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.service-item__desc {
+    color: #575F66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.service__btn {
+    margin-top: 55px;
 }
