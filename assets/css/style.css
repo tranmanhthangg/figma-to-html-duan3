@@ -200,7 +200,7 @@ a {
 
 .service__desc {
     max-width: 468px;
-    margin: 0 auto;
+    margin: 18px auto 0;
 }
 
 .service__row {
@@ -266,4 +266,58 @@ a {
 
 .service__btn {
     margin-top: 55px;
+}
+
+/* ==================== work ====================*/
+
+.work {
+    padding: 100px 0;
+    background-color: #F6FBFF;
+}
+
+.work__desc {
+    max-width: 468px;
+}
+
+.work__list {
+    margin-top: 86px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+
+.work-item {
+    padding: 43px;
+    border-radius: 4px;
+    background: #fff;
+    border: 16px solid #EAF6FF;
+    transition: 0.25s;
+}
+
+.work-item:hover {
+    border-color: #2E80CE;
+    transform: translateY(-16px);
+}
+
+.work-item__heading {
+    margin-top: 18px;
+    color: #10375C;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38;
+}
+.work-item__desc {
+    margin-top: 28px;
+    color: #575F66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.work-item__more {
+    display: inline-block;
+    margin-top: 18px;
+    color: #2E80CE;
+    font-size: 1.6rem;
+    line-height: 1.75;
 }
