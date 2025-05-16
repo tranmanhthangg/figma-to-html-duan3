@@ -220,6 +220,7 @@ a {
 .service-item {
     padding: 21px;
     display: flex;
+    align-items: center;
     max-width: 470px;
     border-radius: 10px;
     background: #FFF;
@@ -320,4 +321,54 @@ a {
     color: #2E80CE;
     font-size: 1.6rem;
     line-height: 1.75;
+}
+
+/* ==================== about ====================*/
+
+.about {
+    margin-top: 85px;
+    padding: 85px 0;
+}
+
+.about__row {
+    display: flex;
+    align-items: center;
+}
+
+.about__media {
+   flex: 1;
+   padding-bottom: 121px;
+   /* tránh bức ảnh nhỏ bị lòi ra khỏi khối */
+}
+
+.about__content {
+    width: 40%;
+}
+
+.about__img {
+    position: relative;
+}
+
+.about__img--big {
+    display: flex;
+    /* thường những thẻ inline sẽ có 1 khoảng nhỏ xíu bị thừa bên dưới, thêm df để mất khoảng thừa đi */
+    width: 512px;
+    height: 370px;
+    border-radius: 6px; 
+    object-fit: cover;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
+}
+
+.about__img--small {
+    width: 332px;
+    height: 370px;
+    border-radius: 6px;
+    object-fit: cover;
+    position: absolute;
+    top: 121px;
+    left: 238px;
+}
+
+.about__btn {
+    margin-top: 38px;
 }
