@@ -361,11 +361,11 @@ a {
 
 .about__row {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 .about__media {
-   flex: 1;
    padding-bottom: 121px;
    /* tránh bức ảnh nhỏ bị lòi ra khỏi khối */
 }
@@ -462,4 +462,51 @@ a {
 .team__control {
     margin-top: 38px;
     justify-content: center;
+}
+
+/* ==================== install ====================*/
+
+.install {
+    padding: 85px 0;
+}
+
+.install__inner {
+    margin-top: 95px;
+    padding: 0 70px;
+    height: 427px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    background: #2E80CE;
+    position: relative;
+}
+
+.install__img {
+    width: 284px;
+    height: 522px;
+    object-fit: cover;
+    position: absolute;
+    /* đừng thắc mắc tại sao chữ lại đi xuyên qua ảnh mà không chạm đến rồi dừng như ở trên vì dùng position relative rôi, bị bay khỏi luồng bth rồi */
+    bottom: 0;
+}
+
+.install__content {
+    width: 57%;
+}
+
+.install__heading {
+    max-width: 489px;
+    color: #fff;
+}
+
+.install__desc {
+    margin-top: 18px;
+    color: #fff;
+}
+
+.install__row {
+    margin-top: 38px;
+    display: flex;
+    column-gap: 28px;
 }
