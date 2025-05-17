@@ -615,3 +615,33 @@ a {
 .blog-item__more:hover {
     color: #2E80CE;
 }
+
+/* ==================== appointment ====================*/
+
+.apointment {
+    margin: 85px 0;
+}
+
+.appointment__inner {
+    padding: 100px 178px;
+    text-align: center;
+    background-color: #F6FBFF;
+}
+
+.appointment__heading::after {
+    content: "";
+    display: block;
+    margin: 18px auto 0;
+    width: 136px;
+    height: 2px;
+    background: #2E80CE;
+}
+
+.appointment__desc {
+    max-width: 617px;
+    margin: 18px auto 0;
+}
+
+.appoitment__btn {
+    margin-top: 38px;
+}
