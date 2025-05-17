@@ -18,6 +18,12 @@ body {
 
 /* ==================== common ====================*/
 
+input, textarea, select, button {
+    font-family: inherit;
+    font-size: inherit;
+}
+/* đặt những thuộc tính cần thiết của những thẻ này là kế thừa vì có 1 số thẻ không kế thừa dẫn đến sai font như nút Subscribe ở footer */
+
 .container {
     width: 1170px;
     margin: 0 auto;
@@ -619,7 +625,7 @@ a {
 /* ==================== appointment ====================*/
 
 .apointment {
-    margin: 85px 0;
+    margin-top: 85px;
 }
 
 .appointment__inner {
@@ -644,4 +650,128 @@ a {
 
 .appoitment__btn {
     margin-top: 38px;
+}
+
+/* ==================== footer ====================*/
+
+.footer {
+    margin-top: 170px;
+    padding: 100px 0 42px;
+    background-color: #10375C;
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer__top {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+    column-gap: 78px;
+}
+
+.footer__desc {
+    margin-top: 21px;
+    color: #A9B3BB;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.footer__heading {
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.footer__list {
+    margin: 20px 0 28px;
+}
+
+.footer-item +.footer-item {
+    margin-top: 10px;
+}
+
+.footer__link {
+    color: #A9B3BB;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    white-space: nowrap;
+    /* khiến cho chữ không bị xuống dòng */
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__social {
+    margin: 20px 0 28px;
+    display: flex;
+    gap: 10px;
+}
+
+.footer__social--btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: #2E80CE;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__social--btn:hover {
+    color: #fff;
+    background-color: #2E80CE
+}
+
+.footer-form {
+    margin-top: 10px;
+    display: flex;
+    column-gap: 12px;
+}
+
+.footer-form__input {
+    padding-left: 10px;
+    width: 212px;
+    height: 46px;
+    border-radius: 4px;
+    border: 1px solid #406181;
+    color: #fff;
+    background-color: transparent;
+    outline: none;
+    /* bỏ viền khi mà click vào ô nhập liệu */
+}
+
+.footer-form__input::placeholder {
+    color: #9CA8B1;
+    font-size: 1.4rem;
+    line-height: 1.86;
+}
+
+.footer-form__submit {
+    width: 108px;
+    height: 46px;
+    border-radius: 4px;
+    background: #2E80CE;
+    border: none;
+    color: #FFF;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.86;
+}
+
+.footer-form__submit:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.footer__copyright {
+    border-top: 1px solid #406181;;
+}
+
+.footer__copyright--text {
+    margin-top: 28px;
+    color: #AAB3BA;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.86;
 }
