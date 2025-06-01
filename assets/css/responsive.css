@@ -109,7 +109,7 @@
         justify-content: center;
     }
 
-    /* service */
+    /*========== service ==========*/
     .service__row {
         flex-direction: column;
         row-gap: 30px;
@@ -131,6 +131,69 @@
     .service-item {
         max-width: 90%;
         text-align: start;
+    }
+
+    /*========== work ==========*/
+    .work__list {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    /*========== about ==========*/
+    .about__row {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .about__media {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .about__img--small {
+        display: none;
+    }
+
+    .about__img--big {
+        width: 100%;
+        height: 100%;
+    }
+
+    .about__content {
+        width: 90%;
+        text-align: center;
+    }
+
+    /*========== team ==========*/
+    .team__list {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+    }
+
+    .team-item__img {
+        margin: 0 auto;
+    }
+
+    /*========== install ==========*/
+    .install__inner {
+        justify-content: center;
+    }
+
+    .install__img {
+        display: none;
+    }
+    
+    .install__content {
+        width: 90%;
+        text-align: center;
+    }
+
+    .install__heading {
+        margin: 0 auto;
+    }
+
+    .install__row {
+        justify-content: center;
     }
 }
 
