@@ -493,7 +493,7 @@ a {
     height: 522px;
     object-fit: cover;
     position: absolute;
-    /* đừng thắc mắc tại sao chữ lại đi xuyên qua ảnh mà không chạm đến rồi dừng như ở trên vì dùng position relative rôi, bị bay khỏi luồng bth rồi */
+    /* đừng thắc mắc tại sao chữ lại đi xuyên qua ảnh mà không chạm đến rồi dừng như ở trên vì dùng position relative rồi, bị bay khỏi luồng bth rồi */
     bottom: 0;
 }
 

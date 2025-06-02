@@ -176,6 +176,9 @@
 
     /*========== install ==========*/
     .install__inner {
+        margin-top: 0;
+        padding: 20px 0;
+        height: auto;
         justify-content: center;
     }
 
@@ -221,6 +224,11 @@
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991.98px) {
+    /* ========== header ==========*/
+    .show-on-mobie {
+        display: none;
+    }
+
     /* ========== footer ==========*/
     .footer-hidden-tablet {
         display: none;
@@ -229,9 +237,96 @@
     .footer__top {
         grid-template-columns: 0.5fr 0.5fr 1fr;
     }
+
 }
 
 /* Mobile */
 @media (max-width: 767.98px) {
+    /* ========== header ==========*/
+    .header__action {
+        display: none;
+    }
+
+    .header__logo {
+        translate: -50% 13%;
+    }
+
+    .menu-header__drawer {
+        inset: 0 20% 0 0;
+    }
+
+    .navbar__item {
+        list-style: none;
+    }
+
+    .separate {
+        border-top: 1.5px solid #8c8b8b;
+        margin-top: 10px;
+    }
+
+    /*========== hero ==========*/
+    .hero__images {
+        width: 100%;
+    }
+
+    .hero__img--large {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero__img--small {
+        display: none;
+    }
+
+    .hero__content {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .hero__row {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    /*========== service ==========*/
+    .service {
+        padding: 100px 0;
+    }
+
+    /*========== team ==========*/
+    .team__list {
+        grid-template-columns: 1fr;
+    }
+
+    /*========== install ==========*/
+    .install__inner {
+        height: auto;
+    }
+
+    /*========== blog ==========*/
+    .blog__list {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    /*========== appointment ==========*/
+    .appointment__inner {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /*========== footer ==========*/
+    .footer {
+        margin-top: 0;
+    }
     
+    .footer__top {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    .footer__copyright {
+        margin-top: 30px;
+    }
 }
